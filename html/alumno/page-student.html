@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Recursos/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/alumno/page-student.css">
+    <title>Document</title>
+</head>
+<body>
+    <a class="position-absolute" href="../../index.html">
+        <img src="../../Recursos/iconos/png/arrow-back.png" alt="return to index">
+    </a>
+    <div class="container py-5 min-vh-100">
+        <form class="d-flex gap-2">
+            <input id="input-codigo" class="form-control w-25 shadow" type="text" maxlength="9" placeholder="codigo del estudiante" required>
+            <input id="input-dni" class="form-control w-25 shadow" type="text" maxlength="8" placeholder="DNI" required>
+            <div id="buscar" class="btn btn-dark">Buscar</div>
+        </form>
+        <div class="py-5 text-center">
+            <h3 id="bienvenida">Bienvenido -</h3>
+            <h1 id="cant-horas">Tu cantidad de hora es: -</h1>
+            <table class="table bg-light">
+                <thead class="bg-secondary-subtle">
+                  <tr>
+                    <th class="text-center" scope="col" style="width: 10%;">N°</th>
+                    <th class="text-center" scope="col" style="width: 50%;">Nombre del projecto</th>
+                    <th class="text-center" scope="col" style="width: 20%;">Semestre</th>
+                    <th class="text-center" scope="col" style="width: 20%;">Horas</th>
+                  </tr>
+                </thead>
+                <tbody id="detalle-studiante"></tbody>
+              </table>
+        </div>
+    </div>
+    <script src="/js/alumno/interaccionAlumno.js" type="module"></script>
+</body>
+</html>

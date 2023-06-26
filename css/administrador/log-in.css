@@ -1,0 +1,47 @@
+:root{
+    --dark: #1e174f;
+    --dark-x: #29416e;
+    --light: #ffffff;
+}
+
+body{ color: var(--light); }   
+
+.bg-personal-dark{ background: var(--dark); }
+
+.bg-dark-x{ background: var(--dark-x); }
+
+.form-control, .btn { min-height: 3.125rem; line-height: initial; }
+
+.img-fluid{ height: 8rem; }
+
+.line {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.letter-o {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #212529;
+    padding: 0 10px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.bg-personal {
+    height: 150px;
+    padding-top: 50px;
+    left: 0; right: 0; bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0,1));
+}
+
+a#emailHelp { color: white; }
+
+input::placeholder{ color: #5b90f1 !important; }

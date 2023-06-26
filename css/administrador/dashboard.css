@@ -1,0 +1,29 @@
+.bg-img-personal {
+    background: url("../../Recursos/fondo/upeu-fondo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-profile-personal { background: #29416e; }
+
+.responsive-personal {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.responsive-personal > * {
+    background-color: #001C37;
+    height: 20rem;
+    width: 20rem;
+    box-shadow: 0 10px 10px 10px #f6a90344;
+    font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+    .responsive-personal { 
+        flex-direction: column;
+        align-items: center;
+    }
+}

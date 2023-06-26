@@ -1,0 +1,28 @@
+body {
+    background-image: url("../Recursos/fondo/slanted-gradient.svg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.container > img { height: 6rem; left: 2rem; top: 2rem; }
+
+.responsive-personal {
+    display: flex;
+    gap: 3rem;
+}
+
+.size-personal-btn {
+    height: 15rem;
+    width: 25rem;
+    font-size: 3rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+@media ( max-width: 900px ){
+    .responsive-personal { flex-direction: column; }
+}
