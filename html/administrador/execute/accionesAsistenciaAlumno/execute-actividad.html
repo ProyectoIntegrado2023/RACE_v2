@@ -28,8 +28,8 @@
                     <span class="list-group-item list-group-item-action list-group-item-light p-3 text-center bg-primary text-light"><strong>Proyectos</strong></span>
                 </div>
             </div>
-            <a class="text-decoration-none text-black-50 bg-secondary-subtle" href="../dashboard.html">
-              <img src="/Recursos/iconos/png/return.png" alt="retornar al dashboard"><strong>REGRESAR</strong>
+            <a class="text-decoration-none text-black-50 bg-secondary-subtle" href="../../dashboard.html">
+                <img src="/Recursos/iconos/png/return.png" alt="retornar al dashboard"><strong>REGRESAR</strong>
             </a>
         </div>
         <div id="page-content-wrapper" class="vh-100 overflow-hidden">
@@ -58,62 +58,70 @@
                     </div>
                 </div>
             </nav>
-            <div class="px-2 row h-100" layout:fragment="page-content">
-                <div class="col-3 col-sm-2">
+            <div class="px-1 row h-personal overflow-hidden" layout:fragment="page-content">
+                <div class="col-2">
                     <ul class="navbar-nav">
-                        <li><a href="execute.html"><img src="/Recursos/iconos/png/return.png" alt="retornar a la pagina de proyeccion social"></a></li>
-                        <li><a class="nav-item" href="execute-project.html">Ver detalle</a></li>
-                        <li><a class="nav-item" href="#">Asistencia</a></li>
+                        <li><a href="../execute.html"><img src="/Recursos/iconos/png/return.png" alt="retornar a la pagina de proyeccion social"></a></li>
+                        <li><a class="nav-item" href="../execute-project.html">Ver detalle</a></li>
+                        <li><a class="nav-item" href="../execute-asisten.html">Asistencia</a></li>
                         <li><a class="nav-item" href="#">Informe</a></li>
                     </ul>
                 </div>
                 <div class="col-9 col-sm-10 overflow-y-scroll h-100">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Semana 1
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <a href="accionesAsistenciaAlumno/execute-asisten-alumno.html" class="btn w-100 btn-outline-secondary border-0">Registrar asistencia</a>
-                            <a href="accionesAsistenciaAlumno/execute-actividad.html" class="btn w-100 btn-outline-secondary border-0">Actividades</a>
-                            <a href="#" class="btn w-100 btn-outline-secondary border-0">Equipo encargado</a>
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="../execute-asisten.html">Asistencia</a></li>
+                          <li class="breadcrumb-item position-relative">
+                            <span class="btn-link" style="cursor: pointer;">Semana 1</span>
+                            <div class="card position-absolute d-none">
+                                <div class="card-body d-grid gap-2">
+                                    <a href="./execute-asisten-alumno.html"><div class="btn btn-outline-primary">Registrar asistenica</div></a>
+                                    <a href="#"><div class="btn btn-primary">Actidad</div></a>
+                                    <a href="#"><div class="btn btn-outline-primary">Equipo encargado</div></a>
+                                </div>
+                            </div>
+                          </li>
+                          <li class="breadcrumb-item active" aria-current="page">Registrar asistencia</li>
+                        </ol>
+                    </nav>
+                    <div class="container">
+                        <div class="mb-3">
+                            <label for="actividad" class="form-label">Actividad</label>
+                            <input type="text" class="form-control" id="actividad" placeholder="Nombre de la actividad">
                           </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Semana 2
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <a href="accionesAsistenciaAlumno/execute-asisten-alumno.html" class="btn w-100 btn-outline-secondary border-0">Registrar asistencia</a>
-                            <a href="accionesAsistenciaAlumno/execute-actividad.html" class="btn w-100 btn-outline-secondary border-0">Actividades</a>
-                            <a href="#" class="btn w-100 btn-outline-secondary border-0">Equipo encargado</a>
+                          <div class="mb-3">
+                            <label for="Descripcion" class="form-label">Descripcion</label>
+                            <textarea class="form-control" id="Descripcion" rows="3" placeholder="describir los detalles de la actividad"></textarea>
                           </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Semana 3
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <a href="accionesAsistenciaAlumno/execute-asisten-alumno.html" class="btn w-100 btn-outline-secondary border-0">Registrar asistencia</a>
-                            <a href="accionesAsistenciaAlumno/execute-actividad.html" class="btn w-100 btn-outline-secondary border-0">Actividades</a>
-                            <a href="#" class="btn w-100 btn-outline-secondary border-0">Equipo encargado</a>
+                          <div class="card text-center">
+                            <div class="card-header"><h3>Materiales</h3></div>
+                                <div class="card-body d-grid gap-2">
+                                    <div class="d-flex gap-2">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Materiales">
+                                        <div class="btn btn-outline-danger">Eliminar</div>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Materiales">
+                                        <div class="btn btn-outline-danger">Eliminar</div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="btn btn-outline-success">Añadir</div>
+                                    </div>
+                                </div>
                           </div>
-                        </div>
-                      </div>
+                          <div class="mt-1 d-flex justify-content-center gap-2">
+                            <div class="btn btn-outline-danger">Cancelar</div>
+                            <div class="btn btn-primary">Guardar</div>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="/Recursos/bootstrap/js/bootstrap.bundle.js"></script>    
-    <!-- Core theme JS-->
     <script src="/js/administrador/plan/scripts.js"></script>
+    <script src="/js/administrador/execute/accionesAsistenciaAlumno/ejecucion-asistencia-alumno.js"></script>
     <div id="confir-footer"></div>
 </body>
 
