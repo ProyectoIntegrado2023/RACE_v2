@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="row" layout:fragment="page-content">
+            <div class="px-1 row h-personal overflow-hidden" layout:fragment="page-content">
                 <div class="col-2 d-flex justify-content-center">
                     <ul class="navbar-nav">
                         <li><a href="../execute.html"><img src="/Recursos/iconos/png/return.png" alt="retornar a la pagina de proyeccion social"></a></li>
@@ -73,45 +73,55 @@
                           <li class="breadcrumb-item"><a href="../execute-asisten.html">Asistencia</a></li>
                           <li class="breadcrumb-item position-relative">
                             <span class="btn-link" style="cursor: pointer;">Semana 1</span>
-                            <div class="card position-absolute d-none">
+                            <div class="card position-absolute d-none z-1">
                                 <div class="card-body d-grid gap-2">
                                     <a href="./execute-asisten-alumno.html"><div class="btn btn-outline-primary">Registrar asistenica</div></a>
-                                    <a href="#"><div class="btn btn-primary">Actidad</div></a>
-                                    <a href="./execute-equipo.html"><div class="btn btn-outline-primary">Equipo encargado</div></a>
+                                    <a href="./execute-actividad.html"><div class="btn btn-outline-primary">Actidad</div></a>
+                                    <a href="#"><div class="btn btn-primary">Equipo encargado</div></a>
                                 </div>
                             </div>
                           </li>
                           <li class="breadcrumb-item active" aria-current="page">Registrar asistencia</li>
                         </ol>
                     </nav>
-                    <div class="container">
-                        <div class="mb-3">
-                            <label for="actividad" class="form-label">Actividad</label>
-                            <input type="text" class="form-control" id="actividad" placeholder="Nombre de la actividad">
-                          </div>
-                          <div class="mb-3">
-                            <label for="Descripcion" class="form-label">Descripcion</label>
-                            <textarea class="form-control" id="Descripcion" rows="3" placeholder="describir los detalles de la actividad"></textarea>
-                          </div>
-                          <div class="card text-center">
-                            <div class="card-header"><h3>Materiales</h3></div>
+                    <div class="container z-0">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <div class="d-flex gap-2">
+                                    <h4 class="w-25">Roles</h4>
+                                    <h4 class="w-75">Participante</h4>
+                                </div>
+                            </div>
                                 <div class="card-body d-grid gap-2">
                                     <div class="d-flex gap-2">
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Materiales">
-                                        <div class="btn btn-outline-danger">Eliminar</div>
+                                        <div class="badge bg-secondary w-25"><h4>Lider</h4></div>
+                                        <input type="text" class="form-control" id="Lider" placeholder="Participante">
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Materiales">
-                                        <div class="btn btn-outline-danger">Eliminar</div>
+                                        <div class="badge bg-secondary w-25"><h4>Intructor 1</h4></div>
+                                        <input type="text" class="form-control" id="Instructor-1" placeholder="Participante">
                                     </div>
-                                    <div class="d-flex justify-content-center">
-                                        <div class="btn btn-outline-success">Añadir</div>
+                                    <div class="d-flex gap-2">
+                                        <div class="badge bg-secondary w-25"><h4>Intructor 2</h4></div>
+                                        <input type="text" class="form-control" id="Instructor-2" placeholder="Participante">
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <div class="badge bg-secondary w-25"><h4>Asistente</h4></div>
+                                        <input type="text" class="form-control" id="Asistente" placeholder="Participante">
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <div class="badge bg-secondary w-25"><h4>Diseñador</h4></div>
+                                        <input type="text" class="form-control" id="Disenador" placeholder="Participante">
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <div class="badge bg-secondary w-25"><h4>Apoyo</h4></div>
+                                        <input type="text" class="form-control" id="Apoyo" placeholder="Participante">
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2">
+                                        <div class="btn btn-outline-primary">Editar</div>
+                                        <div class="btn btn-primary">Guardar</div>
                                     </div>
                                 </div>
-                          </div>
-                          <div class="mt-1 d-flex justify-content-center gap-2">
-                            <div class="btn btn-outline-danger">Cancelar</div>
-                            <div class="btn btn-primary">Guardar</div>
                           </div>
                     </div>
                 </div>

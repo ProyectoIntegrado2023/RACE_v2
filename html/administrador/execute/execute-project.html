@@ -59,7 +59,7 @@
                 </div>
             </nav>
             <div class="px-1 row h-personal overflow-hidden" layout:fragment="page-content">
-                <div class="col-3 col-sm-2">
+                <div class="col-3 col-sm-2 d-flex justify-content-center">
                     <ul class="navbar-nav">
                         <li><a href="execute.html"><img src="/Recursos/iconos/png/return.png" alt="retornar a la pagina de proyeccion social"></a></li>
                         <li><a class="nav-item" href="#">Ver detalle</a></li>
@@ -67,36 +67,46 @@
                         <li><a class="nav-item" href="#">Informe</a></li>
                     </ul>
                 </div>
-                <div class="col-9 col-sm-10 overflow-y-scroll h-100">
+                <div class="col-9 col-sm-10 overflow-y-scroll h-100 d-flex flex-column align-items-center gap-3">
                     <h1>La hora del codigo</h1>
-                    <p>Fecha: 4/4/2023 - 7/7/2023</p>
-                    <p>Lugar: Carapongo</p>
-                    <p>Estado: en curso</p>
-                    <p>Presupuesto: S/. 2000</p>
-                    <p>Cant. particiantes: 60</p>
-                    <strong>Encargados:</strong>
-                    <ul>
-                        <li>David Reyna</li>
-                        <li>Diana Sanchez</li>
-                    </ul>
-                    <strong>Actividades:</strong>
-                    <ul>
-                        <li>Activida 1</li>
-                        <li>Activida 2</li>
-                    </ul>
-                    <strong>Horas</strong>
-                    <ul>
-                        <li>Lider - 10h</li>
-                        <li>Intructor 1 - 8h</li>
-                        <li>Intructor 2 - 8h</li>
-                        <li>Asistente - 5h</li>
-                        <li>Diseñador - 3h</li>
-                        <li>Apoto - 2h</li>
-                    </ul>
-                    <ul>
-                        <li>Activida 1</li>
-                        <li>Activida 2</li>
-                    </ul>
+                    <div class="d-grid gap-1 col-12 col-sm-10 col-md-8">
+                        <h4 class="m-0"><span class="badge bg-secondary">Fecha:</span> 4/4/2023 - 7/7/2023</h4>
+                        <h4 class="m-0"><span class="badge bg-secondary">Ministerio:</span> Ministerio de Chosica</h4>
+                        <h4 class="m-0"><span class="badge bg-secondary">Estado:</span> en curso</h4>
+                        <h4 class="m-0"><span class="badge bg-secondary">Presupuesto:</span> S/. 2000</h4>
+                        <h4 class="m-0"><span class="badge bg-secondary">Cant. particiantes:</span> 60</h4>
+                    </div>
+                    <div class="card text-center col-12 col-sm-10 col-md-8">
+                        <div class="card-body bg-secondary-subtle">
+                          <h5 class="card-title">Encargados</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">David Reyna</li>
+                          <li class="list-group-item">Diana Sanchez</li>
+                        </ul>
+                    </div>
+                    <div class="card text-center col-12 col-sm-10 col-md-8">
+                        <div class="card-body bg-secondary-subtle">
+                          <h5 class="card-title">Actividades</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Activida 1</li>
+                          <li class="list-group-item">Activida 2</li>
+                        </ul>
+                    </div>
+                    <div class="card text-center col-12 col-sm-10 col-md-8">
+                        <div class="card-body bg-secondary-subtle">
+                          <h5 class="card-title">Horas</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Lider - 10h</li>
+                          <li class="list-group-item">Intructor 1 - 8h</li>
+                          <li class="list-group-item">Intructor 2 - 8h</li>
+                          <li class="list-group-item">Asistente - 5h</li>
+                          <li class="list-group-item">Diseñador - 3h</li>
+                          <li class="list-group-item">Apoto - 2h</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
