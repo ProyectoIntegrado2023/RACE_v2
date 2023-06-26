@@ -28,7 +28,7 @@
                     <span class="list-group-item list-group-item-action list-group-item-light p-3 text-center bg-primary text-light"><strong>Proyectos</strong></span>
                 </div>
             </div>
-            <a class="text-decoration-none text-black-50 bg-secondary-subtle" href="../dashboard.html">
+            <a class="text-decoration-none text-black-50 bg-secondary-subtle" href="../../dashboard.html">
                 <img src="/Recursos/iconos/png/return.png" alt="retornar al dashboard"><strong>REGRESAR</strong>
             </a>
         </div>
@@ -61,22 +61,41 @@
             <div class="container-fluid row h-100" layout:fragment="page-content">
                 <div class="col-2">
                     <ul class="navbar-nav">
-                        <li><a href="execute.html"><img src="/Recursos/iconos/png/return.png" alt="retornar a la pagina de proyeccion social"></a></li>
-                        <li><a class="nav-item" href="execute-project.html">Ver detalle</a></li>
-                        <li><a class="nav-item" href="#">Asistencia</a></li>
+                        <li><a href="../execute.html"><img src="/Recursos/iconos/png/return.png" alt="retornar a la pagina de proyeccion social"></a></li>
+                        <li><a class="nav-item" href="../execute-project.html">Ver detalle</a></li>
+                        <li><a class="nav-item" href="../execute-asisten.html">Asistencia</a></li>
                         <li><a class="nav-item" href="#">Informe</a></li>
                     </ul>
                 </div>
                 <div class="col-10">
-                    
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="../execute-asisten.html">Asistencia</a></li>
+                          <li class="breadcrumb-item">
+                            <span class="btn-link" style="cursor: pointer;">Semana 1</span>
+                            <div class="card position-absolute d-none">
+                                <div class="card-body d-grid gap-2">
+                                    <a href="#"><div class="btn btn-primary">Registrar asistenica</div></a>
+                                    <a href="#"><div class="btn btn-outline-primary">Informe</div></a>
+                                    <a href="#"><div class="btn btn-outline-primary">rActividad</div></a>
+                                </div>
+                            </div>
+                          </li>
+                          <li class="breadcrumb-item active" aria-current="page">Registrar asistencia</li>
+                        </ol>
+                    </nav>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="/Recursos/bootstrap/js/bootstrap.bundle.js"></script>    
-    <!-- Core theme JS-->
     <script src="/js/administrador/plan/scripts.js"></script>
+    <script src="/js/administrador/execute/accionesAsistenciaAlumno/ejecucion-asistencia-alumno.js"></script>
     <div id="confir-footer"></div>
 </body>
 
