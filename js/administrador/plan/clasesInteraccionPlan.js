@@ -7,7 +7,6 @@ export class interaccionListarProyecto {
     identificarTipoIteraccion(accion, etiqueta){
         switch(accion){
             case 'editar' :
-                this.editar();
                 break;
             case 'eliminar' :
                 this.eliminar(etiqueta);
@@ -21,10 +20,6 @@ export class interaccionListarProyecto {
                 this.noMirar(etiqueta);
                 break;
         }
-    }
-    editar(){
-        this.contenedorEditor.classList.remove('d-none');
-        this.contenedorEditor.classList.add('d-block');
     }
     actualizarEditor(){
         this.contenedorEditor.classList.remove('d-block');

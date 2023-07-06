@@ -94,7 +94,7 @@
                             <td class="text-center">S/. 2000</td>
                             <td class="text-center"><span class="badge text-bg-warning">Pendiente</span></td>
                             <td class="text-center">
-                                <img src="/Recursos/iconos/png/edit.png" alt="editar proyecto">
+                                <a href="plan-add.html"><img src="/Recursos/iconos/png/edit.png" alt="editar proyecto"></a>
                                 <img src="/Recursos/iconos/png/delete.png" alt="eliminar proyecto">
                                 <img src="/Recursos/iconos/png/download.png" alt="descargar documento proyecto">
                             </td>
@@ -120,7 +120,7 @@
                             <td class="text-center">S/. 2000</td>
                             <td class="text-center"><span class="badge text-bg-success">Listo</span></td>
                             <td class="text-center">
-                                <img src="/Recursos/iconos/png/edit.png" alt="editar proyecto">
+                                <a href="plan-add.html"><img src="/Recursos/iconos/png/edit.png" alt="editar proyecto"></a>
                                 <img src="/Recursos/iconos/png/delete.png" alt="eliminar proyecto">
                                 <img src="/Recursos/iconos/png/download.png" alt="descargar documento proyecto">
                             </td>
@@ -129,193 +129,6 @@
                   </table>
             </div>
         </div>
-        <!-- donde se editara -->
-        <div id="editor" class="position-fixed bg-black bg-opacity-50 h-100 w-100 d-flex justify-content-center align-items-center d-none">
-            <div class="container-fluid p-5 col-12 col-lg-8 col-xl-6 bg-light position-relative">
-                <button type="button" class="btn-close bg-light position-absolute end-0 top-0 p-3"></button>
-                <form action="#" method="get">
-                    <div class="form-personal-row-1">
-                        <input class="form-control" type="text" name="nombre" id="nombre" placeholder="nombre">
-                        <div>
-                            <select class="form-select" name="facultad" id="facultad">
-                                <option value="null">-</option>
-                                <option value="fia">FIA</option>
-                            </select>
-                            <select class="form-select" name="carrera" id="carrera">
-                                <option value="null">-</option>
-                                <option value="fia">Ing. Sistema</option>
-                                <option value="fia">Ing. Civil</option>
-                            </select>
-                            <select class="form-select" name="ciclo" id="ciclo">
-                                <option value="null">-</option>
-                                <option value="fia">I</option>
-                                <option value="fia">II</option>
-                                <option value="fia">III</option>
-                            </select>
-                        </div>
-                    </div>
-                    <input class="form-control" type="text" name="lugar" id="lugar" placeholder="Lugar">
-                    <div class="form-personal-row-2">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">DE:</span>
-                            <input type="date" class="form-control" name="fecha-inicio" id="fecha-inicio">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">HASTA:</span>
-                            <input type="date" class="form-control" name="fecha-final" id="fecha-final">
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="form-control" aria-label="Monto en soles" placeholder="Monto">
-                            <span class="input-group-text">S/.</span>
-                          </div>
-                    </div>
-                    <div class="form-personal-row-3">
-                        <div class="position-relative">
-                            <input class="btn btn-secondary" type="button" value="Encargado">
-                            <div class="card position-absolute z-1 d-none" style="width: 18rem;">
-                                <button type="button" class="btn-close bg-light position-absolute end-0 top-0 p-3"></button>
-                                <div class="card-body">
-                                  <h5 class="card-title">ENCARGADOS</h5>
-                                  <div class="overflow-y-scroll scroll-personal-1" style="max-height: 100px;">
-                                    <ol id="contenedor-encargados-selecionados" class="card-text">
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Arturo GuzmanRosa Ruiz Flores Guttierres</p>
-                                                <img src="/Recursos/iconos/png/less.png" style="height: 20px;" alt="quitar encargado del equipo">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Rosa Ruiz Flores Guttierres</p>
-                                                <img src="/Recursos/iconos/png/less.png" style="height: 20px;" alt="quitar encargado del equipo">
-                                            </div>
-                                        </li>
-                                      </ol>
-                                  </div>
-                                  <hr>
-                                  <div class="overflow-y-scroll scroll-personal-1" style="max-height: 200px;">
-                                    <ul id="contenedor-encargados">
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Rosalina nueva yorus</p>
-                                                <img src="/Recursos/iconos/png/more.png" style="height: 20px;" alt="agregar encargado al equipo">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between gap-1">
-                                                <p class="m-0">Mario de Loiza Moria</p>
-                                                <img src="/Recursos/iconos/png/more.png" style="height: 20px;" alt="agregar encargado al equipo">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between gap-1">
-                                                <p class="m-0">Mario</p>
-                                                <img src="/Recursos/iconos/png/more.png" style="height: 20px;" alt="agregar encargado al equipo">
-                                            </div>
-                                        </li>
-                                    </ul>
-                                  </div>
-                                  <div class="btn btn-outline-danger">Cancelar</div>
-                                  <div class="btn btn-outline-success">Establecer</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <input class="btn btn-secondary" type="button" value="Asignar grupo">
-                            <div class="card position-absolute z-1 d-none" style="width: 18rem;">
-                                <button type="button" class="btn-close bg-light position-absolute end-0 top-0 p-3"></button>
-                                <div class="card-body">
-                                    <h5 class="card-title">GRUPO</h5>
-                                    <div class="overflow-y-scroll scroll-personal-1 mb-3" style="max-height: 200px;">
-                                        <ul class="card-text">
-                                            <li>
-                                                <div class="d-flex justify-content-between align-items-center gap-1">
-                                                    <label for="grupo-1" class="m-0">grupo 1</label>
-                                                    <input class="form-check-input mt-0" type="radio" name="escoger-grupo" id="grupo-1">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex justify-content-between align-items-center gap-1">
-                                                    <label for="grupo-2" class="m-0">grupo 2</label>
-                                                    <input class="form-check-input mt-0" type="radio" name="escoger-grupo" id="grupo-2">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex justify-content-between align-items-center gap-1">
-                                                    <label for="grupo-3" class="m-0">grupo 3</label>
-                                                    <input class="form-check-input mt-0" type="radio" name="escoger-grupo" id="grupo-3">
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn btn-outline-danger">Cancelar</div>
-                                    <div class="btn btn-outline-success">Establecer</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <input class="btn btn-secondary" type="button" value="Horas designadas">
-                            <div class="card position-absolute z-1 d-none" style="width: 18rem;">
-                                <button type="button" class="btn-close bg-light position-absolute end-0 top-0 p-3"></button>
-                                <div class="card-body">
-                                  <h5 class="card-title">HORAS POR OCUPACION</h5>
-                                  <div class="overflow-y-scroll scroll-personal-1" style="max-height: 300px;">
-                                    <ul class="card-text d-grid gap-1 mb-2">
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Lider:</p>
-                                                <input class="input-group-text w-50" type="number" min="0" name="horas-Lider" id="horas-Lider">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Instructor 1:</p>
-                                                <input class="input-group-text w-50" type="number" min="0" name="horas-Instructor-1" id="horas-Instructor-1">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Instructor 2:</p>
-                                                <input class="input-group-text w-50" type="number" min="0" name="horas-Instructor-2" id="horas-Instructor-2">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Asistente:</p>
-                                                <input class="input-group-text w-50" type="number" min="0" name="horas-Asistente" id="horas-Asistente">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Diseñador:</p>
-                                                <input class="input-group-text w-50" type="number" min="0" name="horas-Disenador" id="horas-Disenador">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between align-items-center gap-1">
-                                                <p class="m-0">Apoyo:</p>
-                                                <input class="input-group-text w-50" type="number" min="0" name="horas-Apoyo" id="horas-Apoyo">
-                                            </div>
-                                        </li>
-                                      </ul>
-                                  </div>
-                                  <div class="btn btn-outline-danger">Cancelar</div>
-                                  <div class="btn btn-outline-success">Establecer</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-personal-row-5">
-                        <input type="file" name="documento" id="documento">
-                    </div>
-                    <div class="form-personal-row-5">
-                        <button class="btn btn-outline-danger">CANCELAR</button>
-                        <button class="btn btn-primary" type="submit">GUARDAR</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- confirmar si se hacer que aparesca un ventana emerjente confirmando la accion -->
         <div class="toast-container position-fixed end-0 bottom-0 p-3">
             <div class="toast d-none">
                 <div class="toast-header bg-success text-light">
@@ -327,10 +140,8 @@
     </div>
     <!-- Bootstrap core JS-->
     <script src="/Recursos/bootstrap/js/bootstrap.bundle.js"></script>    
-    <!-- Core theme JS-->
     <script src="/js/administrador/plan/scripts.js"></script>
     <script src="/js/administrador/plan/interaccionPlan.js" type="module"></script>
-    <script type="module" src="/js/administrador/plan/InteraccionPlanAgregar.js"></script>
 </body>
 
 </html>

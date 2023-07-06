@@ -13,11 +13,12 @@ form {
 .form-personal-row-1 {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 15rem;
+    grid-template-columns: 1fr auto;
 }
 
 .form-personal-row-1 > div {
     display: flex;
+    justify-content: center;
 }
 
 .form-personal-row-2 {
