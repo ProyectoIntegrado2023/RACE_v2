@@ -31,7 +31,7 @@
                 <img src="/Recursos/iconos/png/return.png" alt="retornar al dashboard"><strong>REGRESAR</strong>
             </a>
         </div>
-        <div id="page-content-wrapper" class="vh-100 d-grid">
+        <div id="page-content-wrapper" class="vh-100 d-flex flex-column">
             <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom">
                 <div class="container-fluid">
                     <button class="btn btn-primary" id="sidebarToggle"><i class="fa-solid fa-align-left"></i></button>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="container-fluid p-5 overflow-y-scroll" layout:fragment="page-content">
+            <div class="container-fluid p-5" layout:fragment="page-content">
                 <form action="#" method="get">
                     <div class="form-personal-row-1">
                         <div class="form-floating">
@@ -130,74 +130,11 @@
                                 <h4 id="cantidad-encargados-seleccionados">Encargados seleccionados (0)</h4>
                             </div>
                             <div class="card-body px-4">
-                                <div id="encargados-seleccionados" class="d-grid gap-3"></div>
-                                <hr>
-                                <div>
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" name="busqueda" id="busqueda" placeholder="buscar">
-                                        <label for="busqueda">buscar encargados...</label>
-                                    </div>
-                                    <section id="lista-encargados" class="py-1 d-grid gap-3">
-                                        <div class="d-flex gap-3 align-items-center">
-                                            <div>Luis Mora Nozario Villanueva</div>
-                                            <input type="button" class="btn btn-outline-success" value="añadir">
-                                        </div>
-                                        <div class="d-flex gap-3 align-items-center">
-                                            <div>Maria del triunfo Origuela</div>
-                                            <input type="button" class="btn btn-outline-success" value="añadir">
-                                        </div>
-                                        <div class="d-flex gap-3 align-items-center">
-                                            <div>Alfonso de los Angeles Roble</div>
-                                            <input type="button" class="btn btn-outline-success" value="añadir">
-                                        </div>
-                                    </section>
-                                </div>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="busqueda" id="busqueda" placeholder="buscar">
+                                    <label for="busqueda">nombre del encargado</label>
+                                  </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body d-grid justify-content-center">
-                          <h5 class="card-title">HORAS POR OCUPACION</h5>
-                          <div class="">
-                            <ul class="card-text d-grid gap-1 mb-2">
-                                <li>
-                                    <div class="d-flex justify-content-between align-items-center gap-1">
-                                        <label for="horas-Lider">Lider:</label>
-                                        <input class="input-group-text w-50" type="number" min="0" name="horas-Lider" id="horas-Lider">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between align-items-center gap-1">
-                                        <label for="horas-Instructor-1">Instructor 1:</label>
-                                        <input class="input-group-text w-50" type="number" min="0" name="horas-Instructor-1" id="horas-Instructor-1">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between align-items-center gap-1">
-                                        <label for="horas-Instructor-2">Instructor 2:</label>
-                                        <input class="input-group-text w-50" type="number" min="0" name="horas-Instructor-2" id="horas-Instructor-2">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between align-items-center gap-1">
-                                        <label for="horas-Asistente">Asistente:</label>
-                                        <input class="input-group-text w-50" type="number" min="0" name="horas-Asistente" id="horas-Asistente">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between align-items-center gap-1">
-                                        <label for="horas-Disenador">Diseñador:</label>
-                                        <input class="input-group-text w-50" type="number" min="0" name="horas-Disenador" id="horas-Disenador">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between align-items-center gap-1">
-                                        <label for="horas-Apoyo">Apoyo:</label>
-                                        <input class="input-group-text w-50" type="number" min="0" name="horas-Apoyo" id="horas-Apoyo">
-                                    </div>
-                                </li>
-                              </ul>
-                          </div>
                         </div>
                     </div>
                     
