@@ -1,17 +1,14 @@
 let contenedorMateriales = document.querySelector('#contenedor-materiales');
-let btnAccionEjecutarActividad = document.querySelectorAll('.btn.btn-outline-danger, .btn.btn-outline-success');
 
-btnAccionEjecutarActividad.forEach(btn => {
-    btn.addEventListener('click', e =>{
-        switch(e.target.textContent){
-            case 'Eliminar':
-                e.target.parentElement.remove();
-                break;
-            case 'Añadir':
-                contenedorMateriales.appendChild(agregarMaterial());
-                break;
-        }
-    });
+document.addEventListener('click', e =>{
+    switch(e.target.textContent){
+        case 'Eliminar':
+            e.target.parentElement.remove();
+            break;
+        case 'Añadir':
+            contenedorMateriales.appendChild(agregarMaterial());
+            break;
+    }
 });
 
 function agregarMaterial(){
